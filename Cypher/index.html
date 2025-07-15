@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_self">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrews Ofosu portfolio</title>
+    <meta name="description" content="Professional portfolio showcasing graphic design work and services">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        wine: {
+                            100: '#F9EBEA',
+                            200: '#E6C7C2',
+                            300: '#D2A39B',
+                            400: '#BF7F73',
+                            500: '#AB5B4C',
+                            600: '#8C3D2F',
+                            700: '#722F37', // Main wine color
+                            800: '#59212F',
+                            900: '#3F1327'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        display: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #905e56, #722F37);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-wine-100 min-h-screen font-sans text-wine-900">
+    <!-- Navigation -->
+    <header class="bg-wine-700 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#home" class="text-2xl font-bold font-display">KESS ANDY</a>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-wine-200 transition">Home</a>
+                    <a href="#work" class="hover:text-wine-200 transition">Portfolio</a>
+                    <a href="#about" class="hover:text-wine-200 transition">About</a>
+                    <a href="#services" class="hover:text-wine-200 transition">Services</a>
+                    <a href="#contact" class="hover:text-wine-200 transition">Contact</a>
+                </nav>
+                
+                <!-- Mobile Menu Button -->
+                <button id="menu-toggle" class="md:hidden focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="#home" class="block py-2 hover:text-wine-200">Home</a>
+                <a href="#work" class="block py-2 hover:text-wine-200">Portfolio</a>
+                <a href="#about" class="block py-2 hover:text-wine-200">About</a>
+                <a href="#services" class="block py-2 hover:text-wine-200">Services</a>
+                <a href="#contact" class="block py-2 hover:text-wine-200">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-20 md:py-32 bg-gradient-to-r from-wine-600 to-wine-800 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-display font-bold mb-6">KESSANDY GRAPHIC DESIGN HUB <span class="gradient-text"> </span></h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Crafting memorable brand experiences through thoughtful design solutions</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#work" class="bg-white text-wine-700 px-8 py-3 rounded-full font-semibold hover:bg-wine-200 transition">View Work</a>
+                <a href="/contact.html" class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-wine-700 transition">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="work" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-display font-bold text-center mb-16 text-wine-700">Featured Projects</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="/images/IMG-20250715-WA0012.jpg" alt="Brand Identity Project" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-wine-700 to-transparent opacity-0 group-hover:opacity-90 transition duration-300 flex items-end p-6">
+                        <!-- <div>
+                            <h3 class="text-white text-xl font-bold mb-2">Brand Identity</h3>
+                            <p class="text-wine-200">Logo design & visual identity for a luxury skincare brand</p>
+                            <button class="mt-3 text-white border border-white px-4 py-1 rounded-full text-sm hover:bg-white hover:text-wine-700 transition">View Case Study</button>
+                        </div> -->
+                    </div>
+                </div>
+                
+                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="/images/IMG-20250715-WA0013.jpg" alt="Brand Identity Project" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-wine-700 to-transparent opacity-0 group-hover:opacity-90 transition duration-300 flex items-end p-6">
+                        <!-- <div>
+                            <h3 class="text-white text-xl font-bold mb-2">Brand Identity</h3>
+                            <p class="text-wine-200">Logo design & visual identity for a luxury skincare brand</p>
+                            <button class="mt-3 text-white border border-white px-4 py-1 rounded-full text-sm hover:bg-white hover:text-wine-700 transition">View Case Study</button>
+                        </div> -->
+                    </div>
+                </div>
+                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="/images/IMG-20250715-WA0014.jpg" alt="Brand Identity Project" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-wine-700 to-transparent opacity-0 group-hover:opacity-90 transition duration-300 flex items-end p-6">
+                        <!-- <div>
+                            <h3 class="text-white text-xl font-bold mb-2">Brand Identity</h3>
+                            <p class="text-wine-200">Logo design & visual identity for a luxury skincare brand</p>
+                            <button class="mt-3 text-white border border-white px-4 py-1 rounded-full text-sm hover:bg-white hover:text-wine-700 transition">View Case Study</button>
+                        </div> -->
+                    </div>
+                </div>
+                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/IMG-20250715-WA0015.jpg" alt="Brand Identity Project" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-wine-700 to-transparent opacity-0 group-hover:opacity-90 transition duration-300 flex items-end p-6">
+                        <!-- <div>
+                            <h3 class="text-white text-xl font-bold mb-2">Brand Identity</h3>
+                            <p class="text-wine-200">Logo design & visual identity for a luxury skincare brand</p>
+                            <button class="mt-3 text-white border border-white px-4 py-1 rounded-full text-sm hover:bg-white hover:text-wine-700 transition">View Case Study</button>
+                        </div> -->
+                    </div>
+                </div>
+                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/IMG-20250715-WA0016.jpg" alt="Brand Identity Project" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-wine-700 to-transparent opacity-0 group-hover:opacity-90 transition duration-300 flex items-end p-6">
+                        <!-- <div>
+                            <h3 class="text-white text-xl font-bold mb-2">Brand Identity</h3>
+                            <p class="text-wine-200">Logo design & visual identity for a luxury skincare brand</p>
+                            <button class="mt-3 text-white border border-white px-4 py-1 rounded-full text-sm hover:bg-white hover:text-wine-700 transition">View Case Study</button>
+                        </div> -->
+                    </div>
+                </div>
+                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/IMG-20250715-WA0017.jpg" alt="Brand Identity Project" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-wine-700 to-transparent opacity-0 group-hover:opacity-90 transition duration-300 flex items-end p-6">
+                        <!-- <div>
+                            <h3 class="text-white text-xl font-bold mb-2">Brand Identity</h3>
+                            <p class="text-wine-200">Logo design & visual identity for a luxury skincare brand</p>
+                            <button class="mt-3 text-white border border-white px-4 py-1 rounded-full text-sm hover:bg-white hover:text-wine-700 transition">View Case Study</button>
+                        </div> -->
+                    </div>
+                </div>
+                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/IMG-20250715-WA0018.jpg" alt="Brand Identity Project" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-wine-700 to-transparent opacity-0 group-hover:opacity-90 transition duration-300 flex items-end p-6">
+                        <!-- <div>
+                            <h3 class="text-white text-xl font-bold mb-2">Brand Identity</h3>
+                            <p class="text-wine-200">Logo design & visual identity for a luxury skincare brand</p>
+                            <button class="mt-3 text-white border border-white px-4 py-1 rounded-full text-sm hover:bg-white hover:text-wine-700 transition">View Case Study</button>
+                        </div> -->
+                    </div>
+                </div>
+                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/IMG-20250715-WA0019.jpg" alt="Brand Identity Project" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-wine-700 to-transparent opacity-0 group-hover:opacity-90 transition duration-300 flex items-end p-6">
+                        <!-- <div>
+                            <h3 class="text-white text-xl font-bold mb-2">Brand Identity</h3>
+                            <p class="text-wine-200">Logo design & visual identity for a luxury skincare brand</p>
+                            <button class="mt-3 text-white border border-white px-4 py-1 rounded-full text-sm hover:bg-white hover:text-wine-700 transition">View Case Study</button>
+                        </div> -->
+                    </div>
+                </div>
+                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/IMG-20250715-WA0020.jpg" alt="Brand Identity Project" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-wine-700 to-transparent opacity-0 group-hover:opacity-90 transition duration-300 flex items-end p-6">
+                        <!-- <div>
+                            <h3 class="text-white text-xl font-bold mb-2">Brand Identity</h3>
+                            <p class="text-wine-200">Logo design & visual identity for a luxury skincare brand</p>
+                            <button class="mt-3 text-white border border-white px-4 py-1 rounded-full text-sm hover:bg-white hover:text-wine-700 transition">View Case Study</button>
+                        </div> -->
+                    </div>
+                </div>
+                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/IMG-20250715-WA0021.jpg" alt="Brand Identity Project" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-wine-700 to-transparent opacity-0 group-hover:opacity-90 transition duration-300 flex items-end p-6">
+                        <!-- <div>
+                            <h3 class="text-white text-xl font-bold mb-2">Brand Identity</h3>
+                            <p class="text-wine-200">Logo design & visual identity for a luxury skincare brand</p>
+                            <button class="mt-3 text-white border border-white px-4 py-1 rounded-full text-sm hover:bg-white hover:text-wine-700 transition">View Case Study</button>
+                        </div> -->
+                    </div>
+                </div>
+                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/IMG-20250715-WA0022.jpg" alt="Brand Identity Project" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-wine-700 to-transparent opacity-0 group-hover:opacity-90 transition duration-300 flex items-end p-6">
+                        <!-- <div>
+                            <h3 class="text-white text-xl font-bold mb-2">Brand Identity</h3>
+                            <p class="text-wine-200">Logo design & visual identity for a luxury skincare brand</p>
+                            <button class="mt-3 text-white border border-white px-4 py-1 rounded-full text-sm hover:bg-white hover:text-wine-700 transition">View Case Study</button>
+                        </div> -->
+                    </div>
+                </div>
+                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/IMG-20250715-WA0022.jpg" alt="Brand Identity Project" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-wine-700 to-transparent opacity-0 group-hover:opacity-90 transition duration-300 flex items-end p-6">
+                        <!-- <div>
+                            <h3 class="text-white text-xl font-bold mb-2">Brand Identity</h3>
+                            <p class="text-wine-200">Logo design & visual identity for a luxury skincare brand</p>
+                            <button class="mt-3 text-white border border-white px-4 py-1 rounded-full text-sm hover:bg-white hover:text-wine-700 transition">View Case Study</button>
+                        </div> -->
+                    </div>
+                </div>
+                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/IMG-20250715-WA0024.jpg" alt="Brand Identity Project" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-wine-700 to-transparent opacity-0 group-hover:opacity-90 transition duration-300 flex items-end p-6">
+                        <!-- <div>
+                            <h3 class="text-white text-xl font-bold mb-2">Brand Identity</h3>
+                            <p class="text-wine-200">Logo design & visual identity for a luxury skincare brand</p>
+                            <button class="mt-3 text-white border border-white px-4 py-1 rounded-full text-sm hover:bg-white hover:text-wine-700 transition">View Case Study</button>
+                        </div> -->
+                    </div>
+                </div>
+                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/IMG-20250715-WA0025.jpg" alt="Brand Identity Project" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-wine-700 to-transparent opacity-0 group-hover:opacity-90 transition duration-300 flex items-end p-6">
+                        <!-- <div>
+                            <h3 class="text-white text-xl font-bold mb-2">Brand Identity</h3>
+                            <p class="text-wine-200">Logo design & visual identity for a luxury skincare brand</p>
+                            <button class="mt-3 text-white border border-white px-4 py-1 rounded-full text-sm hover:bg-white hover:text-wine-700 transition">View Case Study</button>
+                        </div> -->
+                    </div>
+                </div>
+                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/IMG-20250715-WA0026.jpg" alt="Brand Identity Project" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-wine-700 to-transparent opacity-0 group-hover:opacity-90 transition duration-300 flex items-end p-6">
+                        <!-- <div>
+                            <h3 class="text-white text-xl font-bold mb-2">Brand Identity</h3>
+                            <p class="text-wine-200">Logo design & visual identity for a luxury skincare brand</p>
+                            <button class="mt-3 text-white border border-white px-4 py-1 rounded-full text-sm hover:bg-white hover:text-wine-700 transition">View Case Study</button>
+                        </div> -->
+                    </div>
+                </div>
+                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/IMG-20250715-WA0027.jpg" alt="Brand Identity Project" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-wine-700 to-transparent opacity-0 group-hover:opacity-90 transition duration-300 flex items-end p-6">
+                        <!-- <div>
+                            <h3 class="text-white text-xl font-bold mb-2">Brand Identity</h3>
+                            <p class="text-wine-200">Logo design & visual identity for a luxury skincare brand</p>
+                            <button class="mt-3 text-white border border-white px-4 py-1 rounded-full text-sm hover:bg-white hover:text-wine-700 transition">View Case Study</button>
+                        </div> -->
+                    </div>
+                </div>
+                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/IMG-20250715-WA0028.jpg" alt="Brand Identity Project" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-wine-700 to-transparent opacity-0 group-hover:opacity-90 transition duration-300 flex items-end p-6">
+                        <!-- <div>
+                            <h3 class="text-white text-xl font-bold mb-2">Brand Identity</h3>
+                            <p class="text-wine-200">Logo design & visual identity for a luxury skincare brand</p>
+                            <button class="mt-3 text-white border border-white px-4 py-1 rounded-full text-sm hover:bg-white hover:text-wine-700 transition">View Case Study</button>
+                        </div> -->
+                    </div>
+                </div>
+                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/IMG-20250715-WA0029.jpg" alt="Brand Identity Project" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-wine-700 to-transparent opacity-0 group-hover:opacity-90 transition duration-300 flex items-end p-6">
+                        <!-- <div>
+                            <h3 class="text-white text-xl font-bold mb-2">Brand Identity</h3>
+                            <p class="text-wine-200">Logo design & visual identity for a luxury skincare brand</p>
+                            <button class="mt-3 text-white border border-white px-4 py-1 rounded-full text-sm hover:bg-white hover:text-wine-700 transition">View Case Study</button>
+                        </div> -->
+                    </div>
+                </div>
+                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/IMG-20250715-WA0030.jpg" alt="Brand Identity Project" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-wine-700 to-transparent opacity-0 group-hover:opacity-90 transition duration-300 flex items-end p-6">
+                        <!-- <div>
+                            <h3 class="text-white text-xl font-bold mb-2">Brand Identity</h3>
+                            <p class="text-wine-200">Logo design & visual identity for a luxury skincare brand</p>
+                            <button class="mt-3 text-white border border-white px-4 py-1 rounded-full text-sm hover:bg-white hover:text-wine-700 transition">View Case Study</button>
+                        </div> -->
+                    </div>
+                </div>
+                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/IMG-20250715-WA0031.jpg" alt="Brand Identity Project" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-wine-700 to-transparent opacity-0 group-hover:opacity-90 transition duration-300 flex items-end p-6">
+                        <!-- <div>
+                            <h3 class="text-white text-xl font-bold mb-2">Brand Identity</h3>
+                            <p class="text-wine-200">Logo design & visual identity for a luxury skincare brand</p>
+                            <button class="mt-3 text-white border border-white px-4 py-1 rounded-full text-sm hover:bg-white hover:text-wine-700 transition">View Case Study</button>
+                        </div> -->
+                    </div>
+                </div>
+                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/IMG-20250715-WA0032.jpg" alt="Brand Identity Project" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-wine-700 to-transparent opacity-0 group-hover:opacity-90 transition duration-300 flex items-end p-6">
+                        <!-- <div>
+                            <h3 class="text-white text-xl font-bold mb-2">Brand Identity</h3>
+                            <p class="text-wine-200">Logo design & visual identity for a luxury skincare brand</p>
+                            <button class="mt-3 text-white border border-white px-4 py-1 rounded-full text-sm hover:bg-white hover:text-wine-700 transition">View Case Study</button>
+                        </div> -->
+                    </div>
+                </div>
+                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/IMG-20250715-WA0034.jpg" alt="Brand Identity Project" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-wine-700 to-transparent opacity-0 group-hover:opacity-90 transition duration-300 flex items-end p-6">
+                        <!-- <div>
+                            <h3 class="text-white text-xl font-bold mb-2">Brand Identity</h3>
+                            <p class="text-wine-200">Logo design & visual identity for a luxury skincare brand</p>
+                            <button class="mt-3 text-white border border-white px-4 py-1 rounded-full text-sm hover:bg-white hover:text-wine-700 transition">View Case Study</button>
+                        </div> -->
+                    </div>
+                </div>
+                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/IMG-20250715-WA0035.jpg" alt="Brand Identity Project" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-wine-700 to-transparent opacity-0 group-hover:opacity-90 transition duration-300 flex items-end p-6">
+                        <!-- <div>
+                            <h3 class="text-white text-xl font-bold mb-2">Brand Identity</h3>
+                            <p class="text-wine-200">Logo design & visual identity for a luxury skincare brand</p>
+                            <button class="mt-3 text-white border border-white px-4 py-1 rounded-full text-sm hover:bg-white hover:text-wine-700 transition">View Case Study</button>
+                        </div> -->
+                    </div>
+                </div>
+                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/IMG-20250715-WA0036.jpg" alt="Brand Identity Project" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-wine-700 to-transparent opacity-0 group-hover:opacity-90 transition duration-300 flex items-end p-6">
+                        <!-- <div>
+                            <h3 class="text-white text-xl font-bold mb-2">Brand Identity</h3>
+                            <p class="text-wine-200">Logo design & visual identity for a luxury skincare brand</p>
+                            <button class="mt-3 text-white border border-white px-4 py-1 rounded-full text-sm hover:bg-white hover:text-wine-700 transition">View Case Study</button>
+                        </div> -->
+                    </div>
+                </div>
+                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/IMG-20250715-WA0036.jpg" alt="Brand Identity Project" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-wine-700 to-transparent opacity-0 group-hover:opacity-90 transition duration-300 flex items-end p-6">
+                        <!-- <div>
+                            <h3 class="text-white text-xl font-bold mb-2">Brand Identity</h3>
+                            <p class="text-wine-200">Logo design & visual identity for a luxury skincare brand</p>
+                            <button class="mt-3 text-white border border-white px-4 py-1 rounded-full text-sm hover:bg-white hover:text-wine-700 transition">View Case Study</button>
+                        </div> -->
+                    </div>
+                </div>
+                 <!-- <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://picsum.photos/600/400?random=1" alt="Brand Identity Project" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-wine-700 to-transparent opacity-0 group-hover:opacity-90 transition duration-300 flex items-end p-6">
+                        <div>
+                            <h3 class="text-white text-xl font-bold mb-2">Brand Identity</h3>
+                            <p class="text-wine-200">Logo design & visual identity for a luxury skincare brand</p>
+                            <button class="mt-3 text-white border border-white px-4 py-1 rounded-full text-sm hover:bg-white hover:text-wine-700 transition">View Case Study</button>
+                        </div> -->
+                    </div> 
+                </div>
+                
+                <!-- Project 2 -->
+                <!-- <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://picsum.photos/600/400?random=2" alt="Packaging Design Project" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-wine-700 to-transparent opacity-0 group-hover:opacity-90 transition duration-300 flex items-end p-6">
+                        <div>
+                            <h3 class="text-white text-xl font-bold mb-2">Packaging Design</h3>
+                            <p class="text-wine-200">Sustainable packaging for organic tea products</p>
+                            <button class="mt-3 text-white border border-white px-4 py-1 rounded-full text-sm hover:bg-white hover:text-wine-700 transition">View Case Study</button>
+                        </div>
+                    </div>
+                </div> -->
+                
+                <!-- Project 3 -->
+                <!-- <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="https://picsum.photos/600/400?random=3" alt="Web Design Project" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-wine-700 to-transparent opacity-0 group-hover:opacity-90 transition duration-300 flex items-end p-6">
+                         <div>
+                            <h3 class="text-white text-xl font-bold mb-2">Web Design</h3>
+                            <p class="text-wine-200">E-commerce website for a boutique fashion label</p>
+                            <button class="mt-3 text-white border border-white px-4 py-1 rounded-full text-sm hover:bg-white hover:text-wine-700 transition">View Case Study</button>
+                        </div> -->
+                    </div>
+                </div> 
+            </div>
+            
+           <!-- <div class="text-center mt-12"> -->
+                <!-- <a href="#" class="inline-block border-2 border-wine-700 text-wine-700 px-8 py-3 rounded-full font-semibold hover:bg-wine-700 hover:text-white transition">View Full Portfolio</a>
+            </div>
+        </div> -->
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-wine-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-8 md:mb-0 md:pr-10">
+                    <img src="images/IMG-20250715-WA0038.jpg" alt="Alex Creative - Graphic Designer" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-2/3">
+                    <h2 class="text-3xl md:text-4xl font-display font-bold mb-6 text-wine-700">About Me</h2>
+                    <p class="text-lg mb-6">As a graphic designer currently pursuing a PEARSON BTEC Foundation Diploma in Creative Media at Design and Technology Institute, I am passionate about visual storytelling and creative expression. I specialize in blending design principles with digital tools to craft compelling visual content. My work reflects a strong understanding of layout, typography, and color theory. I enjoy collaborating on projects that challenge my creativity and sharpen my design skills.
+                         Dedicated and detail-oriented, I aim to create impactful designs that communicate ideas clearly and effectively</p>
+                    
+                    <div class="mb-8">
+                        <h3 class="text-xl font-bold mb-4 text-wine-600">Skills & Expertise</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-wine-100 text-wine-700 px-4 py-2 rounded-full">Brand Identity</span>
+                            <span class="bg-wine-100 text-wine-700 px-4 py-2 rounded-full">Print Design</span>
+                            <span class="bg-wine-100 text-wine-700 px-4 py-2 rounded-full">Packaging</span>
+                            <span class="bg-wine-100 text-wine-700 px-4 py-2 rounded-full">Typography</span>
+                            <span class="bg-wine-100 text-wine-700 px-4 py-2 rounded-full">Art Direction</span>
+                            <span class="bg-wine-100 text-wine-700 px-4 py-2 rounded-full">Adobe Creative Suite</span>
+                        </div>
+                    </div>
+                    
+                    <!-- <a href="#" class="inline-block bg-wine-700 text-white px-8 py-3 rounded-full font-semibold hover:bg-wine-800 transition">Download Resume</a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-display font-bold text-center mb-16 text-wine-700">Design Services</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-wine-50 p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="text-wine-700 mb-4">
+                        <i class="fas fa-palette text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Brand Identity</h3>
+                    <p class="mb-6">Comprehensive visual identity development including logo design, color palette, typography, and brand guidelines.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-wine-600 mt-1 mr-2"></i>
+                            <span>Logo Design</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-wine-600 mt-1 mr-2"></i>
+                            <span>Visual Identity System</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-wine-600 mt-1 mr-2"></i>
+                            <span>Brand Guidelines</span>
+                        </li>
+                    </ul>
+                    <a href="/contact.html" class="text-wine-700 font-semibold hover:underline">Get Started →</a>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-wine-50 p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="text-wine-700 mb-4">
+                        <i class="fas fa-box-open text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Packaging Design</h3>
+                    <p class="mb-6">Eye-catching packaging solutions that stand out on shelves while effectively communicating your brand values.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-wine-600 mt-1 mr-2"></i>
+                            <span>Structural Design</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-wine-600 mt-1 mr-2"></i>
+                            <span>Label & Wrapper Design</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-wine-600 mt-1 mr-2"></i>
+                            <span>Prototyping</span>
+                        </li>
+                    </ul>
+                    <a href="/contact.html" class="text-wine-700 font-semibold hover:underline">Get Started →</a>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-wine-50 p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="text-wine-700 mb-4">
+                        <i class="fas fa-laptop-code text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Digital Design</h3>
+                    <p class="mb-6">Engaging digital assets including social media graphics, web design, and interactive media.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-wine-600 mt-1 mr-2"></i>
+                            <span>Social Media Assets</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-wine-600 mt-1 mr-2"></i>
+                            <span>Website Design</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-wine-600 mt-1 mr-2"></i>
+                            <span>Digital Advertising</span>
+                        </li>
+                    </ul>
+                    <a href="/contact.html" class="text-wine-700 font-semibold hover:underline">Get Started →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-wine-700 text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-display font-bold text-center mb-16">Let's Work Together</h2>
+            
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-6">Get In Touch</h3>
+                    <p class="mb-8 text-wine-200">Have a project in mind or want to discuss potential collaboration? I'd love to hear from you.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-wine-300 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold">Email</h4>
+                                <a href="mailto:hello@alexcreative.design" class="text-wine-200 hover:text-white">andrewsadu63@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <i class="fas fa-phone-alt text-wine-300 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold">Phone</h4>
+                                <a href="tel:+1234567890" class="text-wine-200 hover:text-white">(+233)536594917</a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-wine-300 mt-1 mr-4"></i>
+                            <div>
+                                <h4 class="font-bold">Studio</h4>
+                                <p class="text-wine-200">Pokuase, Accra ,Ghana</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-10">
+                        <h4 class="font-bold mb-4">Follow Me</h4>
+                        <div class="flex space-x-4">
+                            <a href="/contact.html" class="text-wine-300 hover:text-white text-xl"><i class="fas fa-phone-alt text-wine-300 mt-1 mr-4e"></i></a>
+                            <a href="https://www.youtube.com/@EliteMedia-c8j" class="text-wine-300 hover:text-white text-xl"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="text-wine-300 hover:text-white text-xl"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-wine-300 hover:text-white text-xl"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block mb-2 font-medium">Your Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 rounded-lg bg-wine-800 border border-wine-600 focus:outline-none focus:ring-2 focus:ring-wine-300 text-white placeholder-wine-400">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block mb-2 font-medium">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg bg-wine-800 border border-wine-600 focus:outline-none focus:ring-2 focus:ring-wine-300 text-white placeholder-wine-400">
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block mb-2 font-medium">Subject</label>
+                            <input type="text" id="subject" class="w-full px-4 py-3 rounded-lg bg-wine-800 border border-wine-600 focus:outline-none focus:ring-2 focus:ring-wine-300 text-white placeholder-wine-400">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block mb-2 font-medium">Your Message</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 rounded-lg bg-wine-800 border border-wine-600 focus:outline-none focus:ring-2 focus:ring-wine-300 text-white placeholder-wine-400"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="bg-white text-wine-700 px-8 py-3 rounded-full font-semibold hover:bg-wine-200 transition w-full md:w-auto">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-wine-900 text-wine-300 py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="#home" class="text-2xl font-bold font-display text-white">KESSANDY Creative</a>
+                    <p class="mt-2">Bringing creative visions to life</p>
+                </div>
+                
+                <div class="flex flex-col items-center md:items-end">
+                    <div class="flex space-x-6 mb-4">
+                        <a href="#" class="hover:text-white"><i class="fab fa-behance"></i></a>
+                        <a href="#" class="hover:text-white"><i class="fab fa-dribbble"></i></a>
+                        <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p>© 2023 KESSANDY CREATIVE. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="fixed bottom-8 right-8 bg-wine-700 text-white p-3 rounded-full shadow-lg hover:bg-wine-600 transition">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                if (this.getAttribute('href') === '#') return;
+                
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
